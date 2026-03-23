@@ -1,34 +1,60 @@
-/* Style for Portfolio Website */
+/* Professional Responsive CSS Styling */
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-.header {
+.container {
+    width: 90%;
+    margin: auto;
+    max-width: 1200px;
+}
+
+header {
     background: #35424a;
     color: #ffffff;
     padding: 20px 0;
     text-align: center;
 }
 
-.header h1 {
-    margin: 0;
-    font-size: 2.5em;
+nav {
+    display: flex;
+    justify-content: center;
+    background: #333;
 }
 
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
+nav a {
+    color: #ffffff;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav a:hover {
+    background: #575757;
+}
+
+.main-content {
+    padding: 20px;
 }
 
 .footer {
+    padding: 10px 0;
+    text-align: center;
     background: #35424a;
     color: #ffffff;
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
+}
+
+@media (max-width: 768px) {
+    header, nav, .footer {
+        text-align: center;
+    }
+    nav {
+        flex-direction: column;
+    }
 }
